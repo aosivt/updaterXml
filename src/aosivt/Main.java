@@ -235,3 +235,14 @@ public class JDBCExample {
 //
 //    }
 //}
+//
+//    WITH RECURSIVE nums AS
+//        (SELECT 1 AS value
+//                UNION ALL
+//                SELECT value + 1 AS value
+//                FROM nums
+//                WHERE nums.value <= 99)
+//SELECT *
+//        FROM nums
+
+//SELECT * from generate_series(1,1000) as field
